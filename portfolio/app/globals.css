@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #2C1810;
+  --foreground: #E6C9A8;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Remove borders and ensure smooth transitions between sections */
+section {
+  border: none !important;
+  border-width: 0 !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default borders */
+* {
+  border-width: 0;
+}
+
+/* Optimize performance for the background animations */
+* {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Ensure smooth animations */
+
+
+/* Override any Tailwind border utilities */
+@layer utilities {
+  .border-0 {
+    border-width: 0 !important;
+  }
+  
+  .border-none {
+    border-style: none !important;
+  }
+}
+
+
