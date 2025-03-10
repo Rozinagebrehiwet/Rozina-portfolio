@@ -28,8 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
      
-      <body className={`${langar.className} min-h-screen overflow-x-hidden`}>
-        <div className="relative z-[1]">
+      <body className={`${inter.className}  min-h-screen overflow-x-hidden`}>
+        <div className="relative z-[1] font-light">
           <ThemeSwitcher />
           <FixedSocialLinks />
           <Navbar />

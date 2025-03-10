@@ -1,11 +1,12 @@
 'use client';
 import { motion } from 'framer-motion';
+import { Langar } from 'next/font/google';
 
 const Hero = () => {
   const nameLetters = "Rozina Gebrehiwet".split('');
 
   return (
-    <section id='home' className="min-h-screen flex items-center justify-center bg-[#E6C9A8] dark:bg-[#2C1810] relative overflow-hidden px-4 sm:px-6 lg:px-8">
+    <section id='home' className="min-h-screen flex items-center justify-center font-light bg-[#E6C9A8] dark:bg-[#2C1810] relative overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <motion.div 
@@ -20,7 +21,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-light tracking-wider mb-6 sm:mb-8 font-langar">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-light tracking-wider mb-6 sm:mb-8">
             <motion.div 
               className="flex flex-col sm:flex-row justify-center flex-wrap gap-2 sm:gap-0"
               initial={{ opacity: 0, y: 30 }}
