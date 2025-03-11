@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Rozina Gebrehiwet- Software Developer",
-  description: "Professional portfolio showcasing software development projects and skills",
+  description: "My professional portfolio showcasing my software development projects and skills",
   icons: {
     icon: '/G.png',
     shortcut: '/G.png',
