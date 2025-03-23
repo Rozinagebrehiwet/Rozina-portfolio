@@ -78,23 +78,25 @@ const Contact = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 
+            className="fixed top-0 left-0 right-0 mx-auto z-50
+              w-full max-w-[90%] sm:max-w-[400px] md:max-w-[500px]
+              mt-4 sm:mt-6
               bg-[#2C1810] dark:bg-[#E6C9A8] 
               text-[#E6C9A8] dark:text-[#2C1810]
-              px-6 sm:px-8 py-4 sm:py-5
+              px-4 sm:px-8 py-3 sm:py-5
               rounded-xl shadow-lg 
               border border-[#E6C9A8]/20 dark:border-[#2C1810]/20
-              min-w-[280px] sm:min-w-[320px]
               backdrop-blur-sm"
           >
-            <div className="flex items-center gap-3 sm:gap-4">
+            <div className="flex flex-col items-center justify-center w-full text-center">
               <motion.div
                 initial={{ scale: 0.8 }}
                 animate={{ scale: 1 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.3 }}
+                className="mb-2 sm:mb-3"
               >
                 <svg 
-                  className="w-6 h-6 sm:w-8 sm:h-8 text-[#D4A574] dark:text-[#2C1810]" 
+                  className="w-5 h-5 sm:w-8 sm:h-8 text-[#D4A574] dark:text-[#2C1810] mx-auto" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -107,7 +109,7 @@ const Contact = () => {
                   />
                 </svg>
               </motion.div>
-              <p className="text-base sm:text-lg font-light tracking-wide">Message sent successfully!</p>
+              <p className="text-sm sm:text-lg md:text-xl font-light tracking-wide text-center">Message sent successfully!</p>
             </div>
           </motion.div>
         )}
