@@ -9,14 +9,14 @@ const Projects = () => {
       description: "A modern portfolio website showcasing my work and skills, built with Next.js and Framer Motion.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
       link: "https://github.com/Rozinagebrehiwet/Portfolio",
-      image: "/assets/images/portfolio.png"
+      image: "/portfolio/assets/images/portfolio.png"
     },
     {
       title: "Food Delivery Platform", 
       description: "Full-stack food delivery platform with advanced features. Led as Scrum Master, implementing Agile practices and managing sprints through Jira for efficient project delivery.",
       tech: ["React", "Django", "Agile", "Tailwind CSS", "Jira"],
       link: "https://github.com/Rozinagebrehiwet/food-delivery",
-      image: "/assets/images/food-delivery.png"
+      image: "/portfolio/assets/images/food-delivery.png"
     },
     {
       title: "Network Traffic Detection",
