@@ -28,7 +28,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id='projects' className="py-12 sm:py-16 md:py-24  transition-colors duration-300">
+    <section id='projects' className="py-12 sm:py-16 md:py-24  bg-[#E6C9A8] dark:bg-[#2C1810]  transition-colors duration-300">
       <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
