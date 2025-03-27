@@ -20,11 +20,11 @@ const skillsData = [
   },
   {
     front: "Tools",
-    back: ["VS Code", "Postman", "GitHub", "Docker"]
+    back: ["VS Code", "Postman", "GitHub", "Docker", "Jira"]
   },
   {
     front: "Soft Skills",
-    back: ["Problem Solving", "Team Collaboration", "Agile/Scrum", "Communication"]
+    back: ["Problem Solving", "Team Collaboration", "Agile/Scrum", "Communication", "Scrum Master"]
   }
 ];
 
