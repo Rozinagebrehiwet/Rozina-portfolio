@@ -60,13 +60,16 @@ const Projects = () => {
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
-                {project.tech.map(tech => (
+                {project.tech.map((tech, techIndex) => (
                   <span 
                     key={tech}
-                    className="text-[10px] sm:text-xs px-2 py-1 rounded-full 
+                    className={`text-[10px] sm:text-xs px-2 py-1 rounded-full 
                       bg-[#2C1810]/10 dark:bg-[#E6C9A8]/10 
-                      text-[#2C1810] dark:text-[#E6C9A8]
-                      border border-[#2C1810]/5 dark:border-[#E6C9A8]/5"
+                      ${techIndex === 0 ? 'text-[#5CB338] border-[#5CB338]' : 
+                        techIndex === 1 ? 'text-yellow-500 border-yellow-500' :
+                        techIndex === 2 ? 'text-[#5CB338] border-[#5CB338]' :
+                        'text-yellow-500 border-yellow-500'}
+                      border`}
                   >
                     {tech}
                   </span>
