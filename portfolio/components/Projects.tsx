@@ -96,7 +96,7 @@ const Projects = () => {
                   {project.tech.map((tech, techIndex) => (
                     <span 
                       key={tech}
-                      className={`text-xs sm:text-sm px-4 py-2 rounded-xl border  bg-white/30 dark:bg-black/20
+                      className={`text-xs sm:text-sm px-4 py-2 rounded-xl border  bg-black/10 dark:bg-black/20
                         ${techIndex % 2 === 0 
                           ? 'bg-[] text-yellow-500 border-yellow-500 ' 
                           : 'border-green-500 text-green-500 '}
