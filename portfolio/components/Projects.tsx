@@ -9,14 +9,14 @@ const Projects = () => {
       description: "A modern portfolio website showcasing my work and skills, built with Next.js and Framer Motion.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
       link: "https://github.com/Rozinagebrehiwet/Portfolio",
-      image: "/public/assets/images/portfolio.png"
+      image: "/assets/images/portfolio.png"
     },
     {
       title: "Food Delivery Platform", 
       description: "Full-stack food delivery platform with advanced features. Led as Scrum Master, implementing Agile practices and managing sprints through Jira for efficient project delivery.",
       tech: ["React", "Django", "Agile", "Tailwind CSS", "Jira"],
       link: "https://github.com/Rozinagebrehiwet/food-delivery",
-      image: "/public/assets/images/food-delivery.png"
+      image: "/assets/images/food-delivery.png"
     },
     {
       title: "Network Traffic Detection",
@@ -96,7 +96,7 @@ const Projects = () => {
                   {project.tech.map((tech, techIndex) => (
                     <span 
                       key={tech}
-                      className={`text-xs sm:text-sm px-4 py-2 rounded-xl border  bg-white/80 dark:bg-black/20
+                      className={`text-xs sm:text-sm px-4 py-2 rounded-xl border  bg-white/30 dark:bg-black/20
                         ${techIndex % 2 === 0 
                           ? 'bg-[] text-yellow-500 border-yellow-500 ' 
                           : 'border-green-500 text-green-500 '}
